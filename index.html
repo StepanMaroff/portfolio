@@ -30,8 +30,8 @@
                     <a href="#contact">Контакты</a>
                 </div>
                 <div class="nav__contact">
-                    <a class="nav__contactT"><i class="fa-brands fa-telegram"></i></a>
-                    <a class="nav__contactW"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/Maroff_3" class="nav__contactT"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://wa.me/905319027034" class="nav__contactW"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
                 <button class="hamburger">
                     <span></span >
@@ -54,7 +54,7 @@
                     <p>
                         Всё верно! Это не шутка!
                     </p>
-                    <a href="">Подробнее</a>
+                    <a href="#about-me">Подробнее</a>
                 </div>
                 <img src="./img/header__foto.png" alt="моя фотка" class="header__picture">
             </div>
@@ -69,7 +69,7 @@
             <div class="about-me__elements">
                 <img src="./img/about__foto.png" alt="Моя фотка">
                 <p>
-                    Я начал изучать программирование в 13 лет, и теперь мне всего 13, но я уже достиг значительных
+                    Я начал изучать программирование в 13 лет, и теперь мне всего 14, но я уже достиг значительных
                     успехов и хочу пригласить вас для сотрудничество в создании веб-приложений. Я очень стараюсь и не
                     перестаю удивляться тому, что можно создать с помощью кода. Мой талант и упорство доказывают, что
                     возраст не является препятствием для достижения своих целей.
@@ -143,14 +143,18 @@
                 Оставьте заявку и я свяжусь с вами в течении дня!
             </h3>
             <hr>
-            <form action="#">
+            <form target="send" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc55h_GwBuazpyK7y8LX51q7yIIHy9j4haA_2sxgBewfax6sQ/formResponse">
+                <iframe name="send"></iframe>
+                <div class="form__send">
+                    <p>Форма отправлена</p>
+                </div>
                 <label for="name">Ваше имя</label>
-                <input id="name" type="text" placeholder="Введите ваше имя">
-                <label for="post">Ваша почта</label>
-                <input type="text" placeholder="Введите вашу почту">
+                <input id="name" required type="text" placeholder="Введите ваше имя" name="entry.700809451"  >
+                <label for="post">Ваша почта</label >
+                <input type="email" required placeholder="Введите вашу почту" name="entry.1186998198">
                 <label for="comment">Комментарий</label>
-                <textarea id="comment" placeholder="Комментарий"></textarea>
-                <button>Отправить</button>
+                <textarea id="comment" placeholder="Комментарий" name="entry.128153824"></textarea>
+                <button type="submit">Отправить</button>
             </form>
         </div>
     </section>
@@ -163,12 +167,14 @@
                     Все права защищены и принадлежат Степану Марову
                 </p>
                 <div class="footer__contact">
-                    <a class="contactT2" href=""><i class="fa-brands fa-telegram"></i></a>
-                    <a class="contactW2" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="contactT2" href="https://t.me/Maroff_3"><i class="fa-brands fa-telegram"></i></a>
+                    <a class="contactW2" href="https://wa.me/905319027034"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 
     <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous"></script>
 
